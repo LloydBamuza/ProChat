@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+    android:background="#00796B"
+android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lstChatHistory"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:background="@android:color/background_light">
+
+
+        </ListView>
+
+        <EditText
+            android:id="@+id/edtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Type message here:"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSndMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:hint="Type message here:"
+            android:text="SEND" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Refresh" />
+    </LinearLayout>
+</RelativeLayout>
